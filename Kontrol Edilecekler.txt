@@ -1,0 +1,7 @@
+Resim Sayýsý
+Resimlerdeki product numaralarý
+Liste için li tagýndaki product id numarasýnýn doðruluðu ve sýralý oluþu
+Tablo deðerleri
+Fiyat
+Ýsimler
+Ürün Kodu

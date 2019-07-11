@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="en" class="no-js">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/navigation.css"> <!-- Resource style -->
+    <style>
+        #map {
+            display: block;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 8rem;
+            width: 80%;
+            height: 70%;
+            /*height:40%;
+                width:90%;
+                max-height: 900px;
+                max-width: 1800px;
+                padding-left:10rem;*/
+        }
+    </style>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <title>Product Quick View | CodyHouse</title>
+</head>
+<body>
+    <header>
+        <div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+        <nav class="cd-main-nav-wrapper">
+            <ul class="cd-main-nav">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li>
+                    <a href="#0" class="cd-subnav-trigger"><span>Ürünler</span></a>
+                    <ul>
+                        <li class="go-back"><a href="#0">Menu</a></li>
+                        <li><a href="uzun.html">Uzun Sap</a></li>
+                        <li><a href="kisa.html">Kısa Sap</a></li>
+                        <li><a href="divan.html">Divan</a></li>
+                        <li><a href="oyma.html">Oyma Dut</a></li>
+                        <li><a href="balta.html">Balta</a></li>
+                        <li><a href="elektro.html">Elektro</a></li>
+                        <li><a href="ozel.html">Özel</a></li>
+
+                        <li><a href="#0" class="placeholder">Placeholder</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- .cd-main-nav -->
+        </nav> <!-- .cd-main-nav-wrapper -->
+
+        <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+    </header>
+
+    <div id="map"></div>
+    <table class="contactext">
+        <tr>
+            <td class="contactable-first">Adres</td>
+            <td class="contactable-colon">:</td>
+            <td class="contactable-second">Camişerif Mahallesi 5219. Sokak No:32 33060 Akdeniz/Mersin</td>
+        </tr>
+        <tr>
+            <td class="contactable-first">İş Telefonu</td>
+            <td class="contactable-colon">:</td>
+            <td class="contactable-second">0324 231 61 48</td>
+        </tr>
+        <tr>
+            <td class="contactable-first">Cep Telefonu</td>
+            <td class="contactable-colon">:</td>
+            <td class="contactable-second">0532 395 44 73</td>
+        </tr>
+    </table>
+    <script>
+      function initMap() {
+        var uluru = {lat: 36.799980, lng: 34.628058};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCziSckUPnwdsKCEYaALYhEUK0ED-aSB_c&callback=initMap">
+    </script>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>
